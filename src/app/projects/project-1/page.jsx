@@ -34,7 +34,7 @@ const Page = () => {
                             onSwiper={(swiper) => console.log(swiper)}
                             onSlideChange={() => console.log('slide change')}
                         >
-                            <SwiperSlide><Image src="/images/sistempakar/login.jpg" alt="photo" width={1000} height={900}/></SwiperSlide>
+                            <SwiperSlide><Image src="/images/sistempakar/login.jpg" alt="photo" width={1000} height={450}/></SwiperSlide>
                             <SwiperSlide><Image src="/images/sistempakar/sp1.jpg" alt="photo" width={1000} height={450}/></SwiperSlide>
                             <SwiperSlide><Image src="/images/sistempakar/sp2.jpg" alt="photo" width={1000} height={450}/></SwiperSlide>
                             <SwiperSlide><Image src="/images/sistempakar/sp3.jpg" alt="photo" width={1000} height={450}/></SwiperSlide>
