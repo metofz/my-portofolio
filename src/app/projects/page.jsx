@@ -11,7 +11,7 @@ export default function Project() {
                     </div>
                     <div className='w-16 px-4 mx-auto mb-10 border-t-2 border-white'></div>
 
-                    <div className="flex flex-wrap justify-center gap-4 mb-10 text-left md:grid md:grid-cols-4">
+                    <div className="flex flex-wrap justify-center gap-4 mb-10 text-left md:grid md:grid-cols-3 lg:grid-cols-4">
                         <Link href="/projects/project-1" className="card">
                             <h5 className="card-title">Sistem Pakar</h5>
                             <p className="card-content">Sistem pakar is a web for disease diagnosis</p>

@@ -1,8 +1,9 @@
 'use client'
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-import { Typewriter } from 'react-simple-typewriter'
+import Typed from 'react-typed';
 
 export default function Home() {
     return (
@@ -19,17 +20,14 @@ export default function Home() {
                                 Hello, I'm {' '}
                             </h1>
                             <h1 className="text-4xl font-bold md:text-4xl lg:text-6xl">
-                                <Typewriter
-                                    words={['Reza Fazriansyah']}
-                                    loop={1}
-                                    cursor
-                                    cursorStyle='_'
-                                    typeSpeed={70}
-                                />
+                            <Typed
+                                strings={['Reza Fazriansyah']}
+                                typeSpeed={50}
+                            />
                             </h1>
                             <h2 className="mb-5 font-medium">Students</h2>
                             <p className="mb-10 text-lg font-medium md:text-2xl">Interested in Learning Programming</p>
-                            <a href="#" className='font-medium bg-[#2b2b2b] px-8 py-3 text-white rounded-full hover:shadow-md hover:bg-[#808080] transition duration-300'>Contact Me</a>
+                            <Link href="/contact" className='font-medium bg-[#2b2b2b] px-8 py-3 text-white rounded-full hover:shadow-md hover:bg-[#808080] transition duration-300'>Contact Me</Link>
                         </div>
                         <div className="flex justify-center w-full px-4">
                             <div className="mt-10 text-center">

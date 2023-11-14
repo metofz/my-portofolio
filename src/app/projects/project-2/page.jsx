@@ -2,7 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Carousel from "react-elastic-carousel";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Page = () => {
     return (
@@ -16,11 +21,23 @@ const Page = () => {
 
                 {/* Carousel */}
                 <div className="grid md:grid-cols-3 bg-[#161616] rounded-lg">
-                    <Carousel className="col-span-2">
-                        <Image src="/images/blog/blog1.jpg" width={1000} height={300} alt="photo"/>
-                        <Image src="/images/blog/blog2.jpg" width={1000} height={300} alt="photo"/>
-                        <Image src="/images/blog/login.jpg" width={1000} height={300} alt="photo"/>
-                    </Carousel>
+                    <div className="col-span-2">
+                        <Swiper
+                            // install Swiper modules
+                            modules={[Navigation, Pagination, Scrollbar, A11y]}
+                            spaceBetween={50}
+                            slidesPerView={1}
+                            navigation
+                            pagination={{ clickable: true }}
+                            scrollbar={{ draggable: true }}
+                            onSwiper={(swiper) => console.log(swiper)}
+                            onSlideChange={() => console.log('slide change')}
+                        >
+                            <SwiperSlide><Image src="/images/blog/login.jpg" alt="photo" width={1000} height={450}/></SwiperSlide>
+                            <SwiperSlide><Image src="/images/blog/blog1.jpg" alt="photo" width={1000} height={900}/></SwiperSlide>
+                            <SwiperSlide><Image src="/images/blog/blog2.jpg" alt="photo" width={1000} height={450}/></SwiperSlide>
+                        </Swiper>
+                    </div>
 
                     {/* Detail Project */}
                     <div className="p-6 md:pt-24 text-left">

@@ -13,9 +13,8 @@
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "react-elastic-carousel": "^0.11.5",
-    "react-simple-typewriter": "^5.0.1",
-    "styled-components": "^6.1.1"
+    "react-typed": "^1.2.0",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
