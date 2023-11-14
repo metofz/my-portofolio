@@ -51,13 +51,13 @@ export default function Contact() {
                             <h1 className="text-xl font-bold">Let's Connect</h1>
                             <p className="max-w-md">I'm currently looking for new opportunities, my inbox is always open. Wether you have a question or just want to say hi, I'll try my best to get back to you!</p>
                             <div className="flex flex-row gap-2 mt-4 socials">
-                                <Link href="https://github.com/metofz" target="_blank" className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+                                <Link href="https://github.com/metofz" target="_blank" className="flex items-center justify-center w-12 h-12 bg-white rounded-full hover:scale-110">
                                     <Image src={GithubIcon} alt="Github Icon" width={40}/>
                                 </Link>
-                                <Link href="https://www.linkedin.com/in/reza-fazriansyah-525544252" target="_blank" className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+                                <Link href="https://www.linkedin.com/in/reza-fazriansyah-525544252" target="_blank" className="flex items-center justify-center w-12 h-12 bg-white rounded-full hover:scale-110">
                                     <Image src={LinkedInIcon} alt="LinkedIn Icon" width={40}/>
                                 </Link>
-                                <Link href="https://www.instagram.com/rezafazriansyah/" target="_blank" className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+                                <Link href="https://www.instagram.com/rezafazriansyah/" target="_blank" className="flex items-center justify-center w-12 h-12 bg-white rounded-full hover:scale-110">
                                     <Image src={InstagramIcon} alt="Instagram Icon" width={40} className="text-center"/>
                                 </Link>
                             </div> 

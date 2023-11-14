@@ -21,8 +21,8 @@ const Page = () => {
                 <div className='w-16 px-4 mx-auto mb-10 border-t-2 border-white'></div>
 
                 {/* Carousel */}
-                <div className="grid md:grid-cols-3 bg-[#161616] rounded-lg">
-                    <div className="col-span-2">
+                <div className="block md:grid md:grid-cols-3 bg-[#161616] rounded-lg w-full">
+                    <div className="md:col-span-2">
                         <Swiper
                             // install Swiper modules
                             modules={[Navigation, Pagination, Scrollbar, A11y]}

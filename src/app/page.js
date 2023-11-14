@@ -25,7 +25,7 @@ export default function Home() {
                                 typeSpeed={50}
                             />
                             </h1>
-                            <h2 className="mb-5 font-medium">Students</h2>
+                            <h2 className="mb-5 text-lg font-medium">Students</h2>
                             <p className="mb-10 text-lg font-medium md:text-2xl">Interested in Learning Programming</p>
                             <Link href="/contact" className='font-medium bg-[#2b2b2b] px-8 py-3 text-white rounded-full hover:shadow-md hover:bg-[#808080] transition duration-300'>Contact Me</Link>
                         </div>
