@@ -29,3 +29,7 @@
 .active{
     @apply font-semibold border-b-2 border-white text-xl;
 }
+
+.social-media {
+    @apply flex items-center justify-center w-12 h-12 bg-white rounded-full hover:scale-110 transition-all duration-300;
+}
